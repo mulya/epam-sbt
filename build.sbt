@@ -1,6 +1,6 @@
 import Dependencies._
 
-scalaVersion := "2.12.4"
+crossScalaVersions in ThisBuild := Seq("2.11.11", "2.12.4")
 
 lazy val util = (project in file("util")).
   settings(
