@@ -8,6 +8,7 @@ lazy val util = (project in file("util")).
   )
 
 lazy val root = (project in file(".")).
+  disablePlugins(plugins.Giter8TemplatePlugin).
   dependsOn(util).
   settings(
     inThisBuild(List(
