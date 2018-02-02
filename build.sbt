@@ -2,7 +2,13 @@ import Dependencies._
 
 scalaVersion := "2.12.4"
 
+lazy val util = (project in file("util")).
+  settings(
+    name := "Util"
+  )
+
 lazy val root = (project in file(".")).
+  dependsOn(util).
   settings(
     inThisBuild(List(
       organization := "com.example",
